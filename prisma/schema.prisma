@@ -1,0 +1,94 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum AppointmentStatus {
+  SCHEDULED
+  CONFIRMED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+enum Role {
+  DOCTOR
+  PATIENT
+  NURSE
+  RECEPTIONIST
+  ADMIN
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String        @unique
+  fullName     String
+  role         Role          @default(PATIENT)
+  phone        String?
+  createdAt    DateTime      @default(now())
+  patient      Patient?
+  practitioner Practitioner?
+}
+
+model Patient {
+  id             String          @id @default(uuid())
+  userId         String          @unique
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  dateOfBirth    DateTime
+  bloodGroup     String?
+  allergies      String[]
+  emergencyPhone String?
+  appointments   Appointment[]
+  records        MedicalRecord[]
+  prescriptions  Prescription[]
+}
+
+model Practitioner {
+  id             String          @id @default(uuid())
+  userId         String          @unique
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  specialty      String
+  licenseNumber  String          @unique
+  consultationFee Float
+  appointments   Appointment[]
+}
+
+model Appointment {
+  id              String             @id @default(uuid())
+  patientId       String
+  patient         Patient            @relation(fields: [patientId], references: [id])
+  practitionerId  String
+  practitioner    Practitioner       @relation(fields: [practitionerId], references: [id])
+  scheduledAt     DateTime
+  durationMinutes Int                @default(30)
+  status          AppointmentStatus  @default(SCHEDULED)
+  reasonForVisit  String
+  telehealthRoomUrl String?
+  createdAt       DateTime           @default(now())
+}
+
+model MedicalRecord {
+  id          String   @id @default(uuid())
+  patientId   String
+  patient     Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  diagnosis   String
+  symptoms    String
+  notes       String
+  recordedAt  DateTime @default(now())
+}
+
+model Prescription {
+  id          String   @id @default(uuid())
+  patientId   String
+  patient     Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  medication  String
+  dosage      String
+  frequency   String
+  duration    String
+  issuedAt    DateTime @default(now())
+}

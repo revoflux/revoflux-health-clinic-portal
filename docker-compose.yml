@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: revoflux_health_db
+    environment:
+      POSTGRES_USER: clinic_admin
+      POSTGRES_PASSWORD: clinic_secret_pass
+      POSTGRES_DB: revoflux_clinic
+    ports:
+      - "5434:5432"
+    volumes:
+      - clinic_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: revoflux_health_app
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      DATABASE_URL: "postgresql://clinic_admin:clinic_secret_pass@db:5432/revoflux_clinic?schema=public"
+    depends_on:
+      - db
+
+volumes:
+  clinic_data:
