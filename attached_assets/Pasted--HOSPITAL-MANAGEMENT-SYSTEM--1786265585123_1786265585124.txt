@@ -1,0 +1,47 @@
+
+ ================================================
+  HOSPITAL MANAGEMENT SYSTEM
+ ================================================
+
+ Working folder:
+ D:\github coding\hospital-management-system-v21\hospital-management-system-fixed\hospital-management-system
+
+ [1/4] Checking Node.js...
+       [OK] C:\Program Files\nodejs\node.exe
+
+ [2/4] Checking pnpm...
+       [OK] C:\Users\SAM\AppData\Roaming\npm\pnpm
+
+ [3/4] Installing packages if needed...
+       Packages already installed.
+       [OK] Packages are ready.
+
+ [4/4] Building the API server...
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.onlyBuiltDependencies". See https://pnpm.io/settings for the new home of each setting.
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Already up to date
+[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.27.3
+
+Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+[ERROR] Command failed with exit code 1: "C:\Program Files\nodejs\node.exe" "C:\Users\SAM\AppData\Roaming\npm\node_modules\pnpm\bin\pnpm.mjs" install
+
+pnpm: Command failed with exit code 1: "C:\Program Files\nodejs\node.exe" "C:\Users\SAM\AppData\Roaming\npm\node_modules\pnpm\bin\pnpm.mjs" install
+    at getFinalError (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:34089:14)
+    at makeError (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:36396:21)
+    at getSyncResult (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:38240:10)
+    at spawnSubprocessSync (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:38200:14)
+    at execaCoreSync (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:38130:23)
+    at callBoundExeca (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:40658:23)
+    at boundExeca (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:40635:49)
+    at sync (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:40794:10)
+    at runPnpmCli (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:218401:5)
+    at runDepsStatusCheck (file:///C:/Users/SAM/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.mjs:220133:7)
+
+ [ERROR] API server build failed.
+ Read the error above and run this file again.
+
+ The launcher will stay open so you can read this message.
+
+Press any key to continue . . .

@@ -1,0 +1,1 @@
+- [Windows HMS launcher](windows-launcher.md) — keep batch commands separate, pause on errors, and wait for service ports before opening the browser.

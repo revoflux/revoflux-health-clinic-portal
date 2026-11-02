@@ -1,35 +1,39 @@
-# RevoFlux Full-Stack Healthcare Clinic & Patient Portal
+# RevoFlux Healthcare Clinic & Hospital Management ERP
 
-[![Next.js 15](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
-[![Prisma ORM](https://img.shields.io/badge/Prisma-6.x-2D3748?style=flat-square&logo=prisma)](https://www.prisma.io/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-A production-grade, HIPAA-aligned healthcare practice management, electronic health records (EHR), and patient telehealth portal engineered by [RevoFlux](https://revoflux.app) for medical clinics, dental practices, physiotherapy studios, and telehealth providers.
+A complete, production-grade Hospital Information System (HIS), clinic practice management, and electronic medical records (EMR) platform engineered by [RevoFlux](https://revoflux.app). Designed for polyclinics, specialized medical centers, diagnostic labs, and hospital departments.
 
 ---
 
-## ⚡ Core Capabilities
+## ⚡ Core Operational Modules
 
-- **Patient Self-Service Booking**: Real-time calendar availability with doctor scheduling constraints.
-- **Practitioner Consultation EHR**: Secure clinical notes, diagnosis history, and digital prescriptions.
-- **Telehealth Video Integration**: WebRTC room generation for virtual doctor-patient consultations.
-- **Role-Based Access Control**: Strict segregation between Doctors, Patients, Nurses, and Receptionists.
+- **Patient Registration & Medical Records (EMR)**: Longitudinal patient history, allergies, vitals tracking, and digital consultation notes.
+- **Doctor Directory & Clinical Schedules**: Shift assignments, appointment calendars, and token queues.
+- **Diagnostic Laboratory & Pathology**: Test requisition orders, sample barcoding, lab technician review, and automated PDF report issuance.
+- **In-House Pharmacy & Formulary**: Prescription fulfillment, batch/lot expiration alerts, and stock dispensing ledgers.
+- **Billing, Invoicing & Insurance**: Outpatient/Inpatient billing folios, itemized tariff schedules, and payment reconciliation.
+- **Role-Based Workstations**: Custom permission boundaries for Doctors, Nurses, Lab Technicians, Pharmacists, and Cashiers.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture & Workspaces
 
 ```text
 revoflux-health-clinic-portal/
-├── prisma/
-│   └── schema.prisma         # Relational clinical patient & practitioner schema
-├── src/
-│   └── app/
-│       └── api/
-│           └── appointments/ # REST scheduling endpoints
-├── docker-compose.yml        # PostgreSQL & Next.js service orchestration
+├── lib/
+│   ├── api-client-react/   # React Query type-safe API hooks
+│   ├── api-spec/           # OpenAPI 3.0 specification & endpoints
+│   ├── api-zod/            # Zod validation schemas
+│   └── db/                 # Database connection & query builders
+├── scripts/                # Database seeding & migration runners
+├── prisma/                 # Relational database models
+├── docker-compose.yml      # Multi-container service orchestration
+├── seed.sql                # Initial schema & demo clinical datasets
 ├── package.json
 └── README.md
 ```
@@ -38,17 +42,25 @@ revoflux-health-clinic-portal/
 
 ## 🚀 Quick Start
 
+### 1. Install Dependencies
 ```bash
-docker-compose up -d db
 npm install
-npx prisma generate
+```
+
+### 2. Run Database Seeding
+```bash
+npm run seed
+```
+
+### 3. Launch Development Server
+```bash
 npm run dev
 ```
-Open [http://localhost:3001](http://localhost:3001) to explore the portal.
+Access the clinical command dashboard at [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## 📄 License
-Released under the [MIT License](LICENSE). Built and maintained by [RevoFlux](https://revoflux.app).
+Released under the [MIT License](LICENSE). Maintained by [RevoFlux](https://revoflux.app).
 
-**Healthcare Software Customization:** [revoflux.ai@gmail.com](mailto:revoflux.ai@gmail.com) | [Founder LinkedIn](https://www.linkedin.com/in/muhammad-dawood-dev)
+**Enterprise Deployments & Custom Work:** [revoflux.ai@gmail.com](mailto:revoflux.ai@gmail.com) | [Founder LinkedIn](https://www.linkedin.com/in/muhammad-dawood-dev)

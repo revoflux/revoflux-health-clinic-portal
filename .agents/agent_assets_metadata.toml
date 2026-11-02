@@ -1,0 +1,153 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "bUDRVx4DU22mmEyQbE4Sx"
+uri = "file://hospital-management-system.zip"
+type = "unspecified"
+title = "Hospital Management System - Full Source Code"
+
+[[outputs]]
+id = "IKqM3mazp47dS_8DsMzKf"
+uri = "file://README.md"
+type = "text"
+title = "HMS - Complete Setup & Usage Guide"
+
+[[outputs]]
+id = "Vb_LTA_R0ZCgIxFMkR04r"
+uri = "file://hospital-management-system-full.zip"
+type = "unspecified"
+title = "Hospital Management System - Complete Package (Source + README + run.bat)"
+
+[[outputs]]
+id = "k_MoZY-brSvQMkiBMq_Ln"
+uri = "file://hospital-management-system-v2.zip"
+type = "unspecified"
+title = "Hospital Management System - Fixed (Windows Compatible)"
+
+[[outputs]]
+id = "EgmjS4Zl2ZaTt5nKvTVFp"
+uri = "file://hospital-management-system-v3.zip"
+type = "unspecified"
+title = "Hospital Management System - v3 (Windows Fixed)"
+
+[[outputs]]
+id = "9Hqc2TyI3JBvlyOMDSnnk"
+uri = "file://hospital-management-system-v4.zip"
+type = "unspecified"
+title = "Hospital Management System - v4 (Windows Fixed)"
+
+[[outputs]]
+id = "isEcTm-LXg2qHWlCaeIN-"
+uri = "file://hospital-management-system-v5.zip"
+type = "unspecified"
+title = "Hospital Management System - v5 (All Windows Issues Fixed)"
+
+[[outputs]]
+id = "q8tDwh7U-NGd_c1_UaL_a"
+uri = "file://hospital-management-system-final.zip"
+type = "unspecified"
+title = "HMS - Final (Windows Fixed + Sample Data + run.bat)"
+
+[[outputs]]
+id = "KsFDI-fwCfNl2Ws77p5Zj"
+uri = "file://hospital-management-system-v7.zip"
+type = "unspecified"
+title = "HMS v7 — Pre-configured for your machine (D:\\PostgreSQL18, port 2323, password @3012)"
+
+[[outputs]]
+id = "eZfRxwqA4iBFH3-69AUzO"
+uri = "file://hospital-management-system-v8.zip"
+type = "unspecified"
+title = "HMS v8 — Ngrok + Auto-proxy + Pre-configured (D:\\PostgreSQL18, port 2323, @3012)"
+
+[[outputs]]
+id = "krYFS6vfpTo8tBJ7fC7_J"
+uri = "file://hospital-management-system-v9.zip"
+type = "unspecified"
+title = "HMS v9 — Auto Admin + Auto PostgreSQL Start + Node.js Auto-detect"
+
+[[outputs]]
+id = "k7JHnu1ou2RF9TWruz-BK"
+uri = "file://hospital-management-system-code.zip"
+type = "unspecified"
+title = "HMS — Full Source Code + Sample Data (seed.sql included)"
+
+[[outputs]]
+id = "9tiPEQhIuTl-9zOrEzpjB"
+uri = "file://hospital-management-system-v10.zip"
+type = "unspecified"
+title = "HMS v10 — Same as v9 + Richer Sample Data (15 patients, 8 doctors, 22 appointments, 20 medicines, 23 lab reports)"
+
+[[outputs]]
+id = "HMK6hn17u4vmktXtvnvcf"
+uri = "file://hospital-management-system-v11.zip"
+type = "unspecified"
+title = "HMS v11 — Seed Bug Fixed (data will now load correctly on first run)"
+
+[[outputs]]
+id = "x6BloQmmTdaeKTaPRL7sg"
+uri = "file://hospital-management-system-v12.zip"
+type = "unspecified"
+title = "HMS v12 — API port 5000, DB port 3012, password sam@3012, IP + Ngrok only"
+
+[[outputs]]
+id = "OmoQFwKv8CwfS8UFR06O2"
+uri = "file://hospital-management-system-v13.zip"
+type = "unspecified"
+title = "HMS v13 — setup.bat (run once) + start.bat (run daily) + README.txt"
+
+[[outputs]]
+id = "OiTStWHeFgq0QumlSneKp"
+uri = "file://hospital-management-system-v14.zip"
+type = "unspecified"
+title = "HMS v14 — Fixed (no auto-close, stays open, shows all errors)"
+
+[[outputs]]
+id = "rDo6dEqDdAgwJjaR0H1A4"
+uri = "file://hospital-management-system-v15.zip"
+type = "unspecified"
+title = "HMS v15 — Node.js detection fixed (works even when running as Admin)"
+
+[[outputs]]
+id = "5R3WZSBHTAgevBCEPKVMZ"
+uri = "file://hospital-management-system-v16.zip"
+type = "unspecified"
+title = "HMS v16 — No SQL, JSON file storage (15 patients, 8 doctors, all data included)"
+
+[[outputs]]
+id = "OtPva_DJ2DmuKEeB_XUth"
+uri = "file://hospital-management-system-v17.zip"
+type = "unspecified"
+title = "HMS v17 — Single hms.bat (installs + runs, no SQL)"
+
+[[outputs]]
+id = "zhk8AV21dEzn0Nspl2Hk0"
+uri = "file://hospital-management-system-v18.zip"
+type = "unspecified"
+title = "HMS v18 — Single hms.bat (auto-installs + runs, shows local & network IP)"
+
+[[outputs]]
+id = "vY-TqRrqQvO9JZhAo6xGQ"
+uri = "file://hospital-management-system-v19.zip"
+type = "unspecified"
+title = "HMS v19 — esbuild approval fixed, single hms.bat"
+
+[[outputs]]
+id = "NjGP2Kh869SLe7ZLmeZek"
+uri = "file://hospital-management-system-v20.zip"
+type = "unspecified"
+title = "HMS v20 — pipe bug fixed, servers will start correctly"
+
+[[outputs]]
+id = "X6S-007yoy20MlgPSIyON"
+uri = "file://hospital-management-system-v21.zip"
+type = "unspecified"
+title = "HMS v21 — with new README.md"
+
+[[outputs]]
+id = "XZSXJH2217pgBnzbpnypK"
+uri = "file://hospital-management-system-fixed.zip"
+type = "unspecified"
+title = "Hospital Management System - Fixed Launcher"
+description = "Fresh package with the corrected hms.bat launcher. It keeps the window open on errors, checks Node.js and pnpm, installs packages, builds the API, and starts both servers."
